@@ -1,0 +1,129 @@
+
+     * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+    
+    
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+    
+      align-items: center;
+      padding: 15px 400px;
+      background: #ff6f61;
+    }
+    
+    .navbar nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: black;
+      font-weight: 500;
+    }
+    
+    .menu {
+      font-size: 22px;
+      
+    }
+    
+   
+    .section1 {
+      display: flex;
+      min-height: 90vh;
+      background: linear-gradient(to right, #f3e37e, #ffd6e8);
+    }
+    
+    .division1 {
+      flex: 1;
+      padding: 100px;
+    }
+    
+    .division1 h1 {
+      font-size: 42px;
+      margin-bottom: 20px;
+    }
+    
+    .division1 p {
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+    
+    .division1 button {
+      padding: 12px 30px;
+      border: none;
+      background: #ff6f61;
+      color: white;
+      cursor: pointer;
+    }
+    
+    .burger {
+      flex: 1;
+    }
+    
+    .burger img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    
+    
+    .images{
+      display: flex;
+      padding: 80px;
+      background: linear-gradient(to right, #f3e378, #ffd6e8);
+    }
+    
+    .pictures {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+      flex: 1;
+    }
+    
+    .pictures img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    
+    .lorem {
+      flex: 1;
+      background: #ff6f61;
+      padding: 50px;
+      margin-left: 40px;
+      color: black;
+    }
+    
+    .lorem span {
+      font-size: 14px;
+    }
+    
+    .lorem h2 {
+      margin: 20px 0;
+      font-size: 32px;
+    }
+    
+    .lorem a {
+      text-decoration: none;
+      font-weight: bold;
+      color: black;
+    }
+    
+   
+    @media (max-width: 768px) {
+      .section1, .images {
+        flex-direction: column;
+      }
+    
+      .lorem{
+        margin-left: 0;
+        margin-top: 30px;
+      }
+    
+      .navbar nav {
+        display: none;
+      }
+    }
+    
